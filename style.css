@@ -1,0 +1,309 @@
+/* @font-face {
+    font-family: 'pixel_letters';
+    src: url('pixel_letters.ttf') format('truetype');
+    font-weight: Bold;
+} */
+
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+
+#home {
+    background-color: darkseagreen;
+    font-family: hillside, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content {
+    margin-left: 25%;
+    margin-right: -5px;
+    flex: 1;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-me {
+    margin-left: 27%;
+    margin-right: 15px;
+    flex: 1;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+section {
+    font-family: hillside, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background-color: seashell;
+    margin-bottom: 20px;
+    display: flex;
+    /* padding: 20px; */
+    flex-direction: column;
+
+    /* add a box border around */
+    border: 4px black solid;
+    border-radius: 15px;
+}
+
+.main_me h1, 
+.main_me h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 7em;
+    font-weight: bolder;
+    margin: 120px auto 0 auto;
+}
+
+h2 {
+    color: rgba(0,0,0,.7);
+    font-weight: 100;
+    margin-top: 0;
+    margin-left: 3%;
+    margin-bottom: 100px;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h4 {
+    font-size: 2em;
+    margin: 10px auto 20px 15px;
+}
+
+/* this is for big headings of each individual section on the page */
+.resume-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.resume-content h2 {
+    font-family: hillside;
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+    /* margin-bottom: 15px; */
+    margin: 25px 35px 20px 35px;
+    float: left;
+}
+
+/* job titles or whatever */
+.resume-content h3 {
+    font-size: 35px;
+    font-family: hillside;
+    font-weight: bolder;
+    color: black;
+    clear: both;
+    margin: 10px 35px 0 35px;
+}
+
+.resume-content h4 {
+    font-size: 15px;
+    margin: 0 35px 15px 35px;
+    font-weight: 200;
+}
+
+.resume-content h5 {
+    color: lightsalmon;
+    font-size: small;
+    margin: 0 35px 15px 35px;
+}
+
+.resume-content p {
+    margin: 0 35px 15px 35px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2% 5% 2% 5%;
+}
+
+.list-inline-item {
+    color: rebeccapurple;
+    display: inline-block;
+    font-size: 3em;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+
+.list-inline-item:hover {
+    color: maroon;
+}
+
+.circleImg {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px cornsilk;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.circleImg:hover {
+    box-shadow: 0 0 20px 5px cornsilk;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.side-nav {
+    height: 100%;
+    max-width: 24.7%;
+    position: fixed; /* stays fixed while scrolling */
+    background-color: #232323;
+    left: 0;
+    Top: 0;
+    padding-top: 50px;
+    transition: all 0.3s ease-in-out; /* smooth transition */
+    /* overflow: auto; */
+} 
+
+.side-nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10%;
+    min-width: auto;
+    padding: 0px;
+    /* position: relative; */
+
+    text-align: center;
+    /* color: rgba(255, 237, 177,0.7); */
+    color: cornsilk;
+    display: block;
+    padding: 7px;
+
+    text-decoration: none;
+}
+
+.side-nav a:active {
+    color: greenyellow;
+    /* font-size: large; */
+}
+
+.side-nav a:hover {
+    color: salmon;
+    /* font-size: x-large; */
+}
+
+/* .toggle-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+} */
+
+.green_text {
+    color: darkgreen;
+}
+
+.togglebar {
+    flex: 0 0;
+    width: 100%;
+
+    /* my own styling */
+    background-color: #232323;
+    margin-top: -8px;
+    min-height: 50px;
+    max-height: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    border: #111 2px solid;
+}
+
+#toggle-content {
+    /* flex: 0 0 180px; */
+    top: 40px;
+    /* right: -5px; */
+    background-color: #232323;
+    color: white;
+    transition-duration: .5s;
+    margin-left: -10px;
+    position: fixed;
+    width: 110%;
+}
+#toggle-content.hide {
+    margin-top: -300px;
+}
+#toggle-content ul {
+    padding: 0;
+    /* margin: 15px -10px 0 -1px; */
+    margin-bottom: 0;
+}
+#toggle-content ul li {
+    list-style-type: none;
+    padding: 10px; 
+    color: white;
+    border-bottom: 2px solid #111;
+}
+#toggle-content a {
+    display: block;
+    text-decoration: none;
+    color: cornsilk;
+}
+#toggle-content li:hover a {
+    /* font-size: x-large; */
+    color: salmon;
+}
+#toggle-content li:last-child {
+    border-top: 2px solid #111;
+}
+.toggle i {
+    height: 48px;
+    font-size: 1.4em;
+    width: 48px;
+    color: var(cornsilk);
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+    border: 1px black solid;
+    border-radius: 2px;
+
+    /* float: right;
+    overflow: hidden; */
+}
+.toggle i:hover {
+    color: maroon;
+}
+
+@media (max-width: 850px) {
+    /* This brings the section boxes to the left when sidebar disappears */
+    .main-content {
+        margin-left: -5px;
+        margin-top: 50px;
+    }
+
+    .contact-me {
+        margin-left: 15px;
+        margin-top: 50px;
+    }
+
+    /* first lets hide the sidebar when the screen shrinks */
+    .side-nav {
+        width: 0;
+        left: -100%; /* This moves the side-bar completely off the screen */
+    }
+
+    /* Now lets show the toggle button for smaller screens */
+    .toggle-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 850px) {
+    .togglebar {
+        visibility: hidden;
+    }
+
+    #toggle-content {
+        visibility: hidden;
+        transition-duration: 0s;
+    }
+}
